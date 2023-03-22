@@ -1,0 +1,165 @@
+/* Set background color for entire navbar */
+.myNav {
+  background-color: #3B5998 !important;
+}
+
+/* Set background color for toggler button */
+.myNav .navbar-toggler {
+  color: #fff;
+  background-color: white;
+  border: none;
+}
+.myNav .navbar-toggler:hover {background-color: #4f96e8}
+
+.myNav .navbar-toggler:active {
+  background-color: #3B5998;
+  /* box-shadow: 0 1px white; */
+  transform: translateY(1px);
+}
+
+/* Set style for the logo*/
+.myNav .navCon .logo:hover{
+ 
+}
+
+.myNav .navbar-toggler-icon:hover, .myNav-toggler:hover{
+  /* background-color: pink; */
+  border-color: pink;
+}
+
+/* Set color and font for brand text */
+.myNav .navbar-brand {
+  color: white;
+  font-size: 24px;
+  /* font-weight: bold; */
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+.myNav .navbar-brand:hover {
+  color: pink;
+  font-size: 24px;
+  /* font-weight: bold; */
+  font-family: sans-serif;
+}
+
+/* Set color and font for navbar links */
+.myNav .nav-link {
+  /* color:#cfe5ff ;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif; */
+  color: #cfe5ff;
+  font-size: 20px;
+}
+
+/* Set color and font for navbar dropdown links */
+/* .myNav .dropdown-item {
+  color: #000;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: sans-serif;
+  margin-left: auto;
+} */
+
+/* Set color for active navbar link */
+.myNav .nav-link.active {
+  /* color: pink; */
+  /* background-color: #fff; */
+}
+
+/* Set color and font for search icon */
+.myNav .search-icon {
+  color: #fff;
+  font-size: 20px;
+}
+
+/* Set background color and font for search input */
+.myNav .search-input {
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: sans-serif;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+/* Set padding for navbar links and search bar container */
+.myNav .nav-link, .myNav .search-bar-container {
+  padding: 0 10px;
+}
+
+/* Set margin for search icon */
+.myNav .search-icon {
+  margin-right: 10px;
+  color: gray;
+}
+
+@media only screen and (max-width: 1024px) {
+	.container .nav-btn {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.container nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 50%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 2rem;
+		background-color: var(--primaryColor);
+		transition: 0.5s;
+		transform: translateX(100vh);
+	}
+
+	.container .responsive {
+		transform: none;
+	}
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+	nav a {
+		font-size: 1.5rem;
+		/* margin-right:250px ; */
+	}
+	.navbar-collapse {
+		/* display: flex !important; */
+		height: 15rem !important;
+		/* padding-bottom: 80px; */
+		margin-top:8px;
+		margin-right:auto;
+		background-color: #4287f5;
+		margin-left: auto;
+	  }
+
+	.navbar{
+		height: 5rem;
+	}
+
+	.toggleText {
+		align-items: center;
+
+	}
+
+	.search-bar-container{
+		/* margin-bottom: 322px;
+		margin-left: 350px;
+		align-items: center; */
+		
+	  }
+	  .search-bar-container .input{
+		/* padding-left: 30px; */
+	  }
+}
